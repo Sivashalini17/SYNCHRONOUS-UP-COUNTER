@@ -1,5 +1,5 @@
-### SYNCHRONOUS-UP-COUNTER
-
+### EXPERIMENT 11: SYNCHRONOUS-UP-COUNTER
+DATE:20/12/24
 **AIM:**
 
 To implement 4 bit synchronous up counter and validate functionality.
@@ -28,19 +28,51 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Write the detailed procedure here
+
+2.Type the program in Quartus software.
+
+3.Compile and run the program.
+
+4.Generate the RTL schematic and save the logic diagram.
+
+5.Create nodes for inputs and outputs to generate the timing diagram.
+
+6.For different input combinations generate the timing diagram
 
 **PROGRAM**
+```
+module ex11(out,clk,rst);
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+input clk,rst;
 
-Developed by: RegisterNumber:
+output reg [3:0]out;
+
+always @ (posedge clk)
+
+begin
+
+if(rst) out<=0;
+
+else out <= out+1;
+
+end
+
+endmodule
+```
+
+Developed by: SIVA SHALINI.S
+RegisterNumber:24009860
 */
 
 **RTL LOGIC UP COUNTER**
+![image](https://github.com/user-attachments/assets/e8591827-030f-49a7-968d-492f882595fa)
 
 **TIMING DIAGRAM FOR IP COUNTER**
+  ![image](https://github.com/user-attachments/assets/1aba327e-27d1-41f3-afad-7ebb113fc333)
 
 **TRUTH TABLE**
+![image](https://github.com/user-attachments/assets/0b58edfb-987c-4b64-9c3f-026a504daa79)
 
 **RESULTS**
+Therefore ,the result has been successfully got .
